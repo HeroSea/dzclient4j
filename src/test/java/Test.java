@@ -26,11 +26,11 @@ public class Test {
 		//testLogin();
 		Client uc = new Client();
 
-		String s = uc.uc_user_active("各自", "$password", "$email");
+//		String s = uc.uc_user_active("各自", "$password", "$email");
 		
 		
 		//String s = uc.uc_authcode("8485m7QEfsvnOg9tKGvAsxlwXpAzZU6LhFA04pD6N0XIYG1cJVDh2Th83Qcci130UPHbXp+UNG0","DECODE");
-		System.out.println(s);
+//		System.out.println(s);
 	
 	}
 	
