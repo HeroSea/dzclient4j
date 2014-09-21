@@ -161,7 +161,7 @@ public class Base64 {
                 {
                     shift -= 8; // write them out (from the top, leaving any
                     out[index++] = // excess at the bottom for next iteration.
-                        (byte) ((accum >> shift) & 0xff);
+                            (byte) ((accum >> shift) & 0xff);
                 }
             }
             // we will also have skipped processing a padding null byte ('=') here;
@@ -175,7 +175,7 @@ public class Base64 {
         // if there is STILL something wrong we just have to throw up now!
         if (index != out.length) {
             throw new Error("Miscalculated data length (wrote " +
-                index + " instead of " + out.length + ")");
+                    index + " instead of " + out.length + ")");
         }
 
         return out;
@@ -186,7 +186,7 @@ public class Base64 {
     // code characters for values 0..63
     //
     private static char[] alphabet =
-        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".toCharArray();
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".toCharArray();
 
     //
     // lookup table for converting base64 characters to value in range 0..63
